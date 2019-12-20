@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Marvli</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 p-0 main-wrapper">
+
+            <div class="sidebar">
+                <div class="sidebar-top">
+                    <a href="index.html" class="logo">
+                        <svg width="99" height="26" viewBox="0 0 99 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M42.2698 19.4999C42.1262 19.4999 42.0087 19.4609 41.9174 19.3829C41.826 19.2919 41.7803 19.1749 41.7803 19.0319V6.3374C41.7803 6.1944 41.826 6.07739 41.9174 5.9864C42.0087 5.89539 42.1262 5.84989 42.2698 5.84989H43.8168C44.091 5.84989 44.2868 5.9734 44.4043 6.22039L48.1837 13.2404L52.0023 6.22039C52.1328 5.9734 52.3287 5.84989 52.5898 5.84989H54.1172C54.2608 5.84989 54.3783 5.89539 54.4697 5.9864C54.5611 6.07739 54.6068 6.1944 54.6068 6.3374V19.0319C54.6068 19.1749 54.5611 19.2919 54.4697 19.3829C54.3783 19.4609 54.2608 19.4999 54.1172 19.4999H52.4723C52.3417 19.4999 52.2308 19.4544 52.1394 19.3634C52.048 19.2724 52.0023 19.1619 52.0023 19.0319V10.5884L49.2608 15.7949C49.091 16.0809 48.8691 16.2239 48.595 16.2239H47.7921C47.5179 16.2239 47.296 16.0809 47.1263 15.7949L44.3847 10.5884V19.0319C44.3847 19.1619 44.339 19.2724 44.2477 19.3634C44.1693 19.4544 44.0584 19.4999 43.9148 19.4999H42.2698Z"
+                                  fill="white"/>
+                            <path d="M60.3747 19.6949C59.7089 19.6949 59.0953 19.5649 58.534 19.3049C57.9856 19.0319 57.5483 18.6679 57.2219 18.2129C56.9086 17.7579 56.752 17.2574 56.752 16.7114C56.752 15.8274 57.111 15.1124 57.829 14.5664C58.547 14.0204 59.5327 13.6499 60.7859 13.4549L63.4687 13.0649V12.6554C63.4687 12.0834 63.3251 11.6544 63.0379 11.3684C62.7507 11.0824 62.2873 10.9394 61.6476 10.9394C61.2167 10.9394 60.8643 11.0239 60.5901 11.1929C60.329 11.3489 60.1201 11.5049 59.9635 11.6609C59.8068 11.8299 59.7024 11.9404 59.6502 11.9924C59.5979 12.1484 59.5 12.2264 59.3564 12.2264H57.8486C57.7311 12.2264 57.6266 12.1874 57.5352 12.1094C57.4569 12.0314 57.4178 11.9274 57.4178 11.7974C57.4308 11.4724 57.5875 11.1019 57.8877 10.6859C58.2011 10.2699 58.6776 9.9124 59.3172 9.6134C59.9569 9.3144 60.7402 9.1649 61.6671 9.1649C63.2076 9.1649 64.3303 9.5094 65.0353 10.1984C65.7403 10.8874 66.0928 11.7909 66.0928 12.9089V19.0319C66.0928 19.1619 66.0471 19.2724 65.9557 19.3634C65.8774 19.4544 65.7664 19.4999 65.6228 19.4999H64.0366C63.9061 19.4999 63.7951 19.4544 63.7037 19.3634C63.6123 19.2724 63.5666 19.1619 63.5666 19.0319V18.2714C63.2794 18.6874 62.8682 19.0319 62.3329 19.3049C61.8107 19.5649 61.158 19.6949 60.3747 19.6949ZM61.0405 17.8424C61.7585 17.8424 62.346 17.6084 62.8029 17.1404C63.2598 16.6724 63.4883 15.9899 63.4883 15.0929V14.6834L61.5301 14.9954C60.7729 15.1124 60.1985 15.3009 59.8068 15.5609C59.4282 15.8209 59.2389 16.1394 59.2389 16.5164C59.2389 16.9324 59.4152 17.2574 59.7676 17.4914C60.1201 17.7254 60.5444 17.8424 61.0405 17.8424Z"
+                                  fill="white"/>
+                            <path d="M69.075 19.4999C68.9444 19.4999 68.8334 19.4544 68.7421 19.3634C68.6507 19.2724 68.605 19.1619 68.605 19.0319V9.84739C68.605 9.7174 68.6507 9.6069 68.7421 9.5159C68.8334 9.4119 68.9444 9.3599 69.075 9.3599H70.6611C70.8047 9.3599 70.9222 9.4054 71.0136 9.4964C71.105 9.5874 71.1507 9.70439 71.1507 9.84739V10.6469C71.464 10.2309 71.8557 9.9124 72.3256 9.6914C72.8087 9.4704 73.357 9.3599 73.9706 9.3599H74.7734C74.917 9.3599 75.028 9.4054 75.1063 9.4964C75.1977 9.5744 75.2434 9.6849 75.2434 9.8279V11.2319C75.2434 11.3619 75.1977 11.4724 75.1063 11.5634C75.028 11.6544 74.917 11.6999 74.7734 11.6999H73.246C72.6324 11.6999 72.1494 11.8754 71.7969 12.2264C71.4444 12.5774 71.2682 13.0584 71.2682 13.6694V19.0319C71.2682 19.1619 71.2225 19.2724 71.1311 19.3634C71.0397 19.4544 70.9222 19.4999 70.7786 19.4999H69.075Z"
+                                  fill="white"/>
+                            <path d="M80.3739 19.4999C80.178 19.4999 80.0279 19.4609 79.9235 19.3829C79.819 19.2919 79.7342 19.1684 79.6689 19.0124L76.007 9.9644L75.9678 9.7889C75.9678 9.6719 76.007 9.5744 76.0853 9.4964C76.1767 9.4054 76.2811 9.3599 76.3986 9.3599H77.9848C78.2328 9.3599 78.4026 9.4834 78.4939 9.7304L81.0984 16.5749L83.7029 9.7304C83.742 9.6394 83.8008 9.5549 83.8791 9.4769C83.9705 9.3989 84.0815 9.3599 84.212 9.3599H85.8178C85.9222 9.3599 86.0136 9.4054 86.0919 9.4964C86.1833 9.5744 86.229 9.6719 86.229 9.7889C86.229 9.8669 86.2225 9.9254 86.2094 9.9644L82.5279 19.0124C82.4627 19.1684 82.3778 19.2919 82.2733 19.3829C82.1689 19.4609 82.0188 19.4999 81.823 19.4999H80.3739Z"
+                                  fill="white"/>
+                            <path d="M88.5048 19.4999C88.3743 19.4999 88.2633 19.4544 88.1719 19.3634C88.0806 19.2724 88.0349 19.1619 88.0349 19.0319V6.12289C88.0349 5.9799 88.0806 5.8694 88.1719 5.7914C88.2633 5.7004 88.3743 5.6549 88.5048 5.6549H90.1302C90.2738 5.6549 90.3848 5.7004 90.4631 5.7914C90.5545 5.8694 90.6002 5.9799 90.6002 6.12289V19.0319C90.6002 19.1619 90.5545 19.2724 90.4631 19.3634C90.3848 19.4544 90.2738 19.4999 90.1302 19.4999H88.5048Z"
+                                  fill="white"/>
+                            <path d="M93.5894 7.6829C93.4588 7.6829 93.3479 7.6374 93.2565 7.5464C93.1651 7.4554 93.1194 7.3449 93.1194 7.21489V5.8109C93.1194 5.6809 93.1651 5.5704 93.2565 5.47939C93.3479 5.3884 93.4588 5.3429 93.5894 5.3429H95.3714C95.5019 5.3429 95.6129 5.3884 95.7043 5.47939C95.8087 5.5704 95.861 5.6809 95.861 5.8109V7.21489C95.861 7.3449 95.8153 7.4554 95.7239 7.5464C95.6325 7.6374 95.515 7.6829 95.3714 7.6829H93.5894ZM93.6677 19.4999C93.5372 19.4999 93.4262 19.4544 93.3348 19.3634C93.2434 19.2724 93.1977 19.1619 93.1977 19.0319V9.8279C93.1977 9.6979 93.2434 9.5874 93.3348 9.4964C93.4262 9.4054 93.5372 9.3599 93.6677 9.3599H95.2931C95.4367 9.3599 95.5476 9.4054 95.626 9.4964C95.7174 9.5744 95.763 9.6849 95.763 9.8279V19.0319C95.763 19.1619 95.7174 19.2724 95.626 19.3634C95.5476 19.4544 95.4367 19.4999 95.2931 19.4999H93.6677Z"
+                                  fill="white"/>
+                            <rect width="18.1309" height="6.94078" rx="3.47039"
+                                  transform="matrix(0.424084 0.905623 -0.906988 0.421156 20.5967 3.25)"
+                                  fill="url(#paint0_linear)"/>
+                            <rect width="18.1306" height="6.94078" rx="3.47039"
+                                  transform="matrix(0.424084 -0.905623 0.906989 0.421156 0 19.6802)"
+                                  fill="url(#paint1_linear)"/>
+                            <rect width="18.1309" height="6.94078" rx="3.47039"
+                                  transform="matrix(0.424084 0.905623 -0.906988 0.421156 11.0559 3.25)"
+                                  fill="url(#paint2_linear)"/>
+                            <rect width="18.1306" height="6.94078" rx="3.47039"
+                                  transform="matrix(0.424084 -0.905623 0.906989 0.421156 9.53271 19.6802)"
+                                  fill="url(#paint3_linear)"/>
+                            <defs>
+                                <linearGradient id="paint0_linear" x1="17.9421" y1="3.21825" x2="7.97307" y2="3.7519"
+                                                gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#27ECB9"/>
+                                    <stop offset="1" stop-color="#26DAAD"/>
+                                </linearGradient>
+                                <linearGradient id="paint1_linear" x1="0.437965" y1="2.33611" x2="11.7197" y2="2.90553"
+                                                gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#108181"/>
+                                    <stop offset="1" stop-color="#0E7373"/>
+                                </linearGradient>
+                                <linearGradient id="paint2_linear" x1="0.144644" y1="3.86894" x2="10.8943" y2="3.05199"
+                                                gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#07A3A3"/>
+                                    <stop offset="1" stop-color="#0B9897"/>
+                                </linearGradient>
+                                <linearGradient id="paint3_linear" x1="0.11008" y1="3.02438" x2="17.6715" y2="4.55099"
+                                                gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#0FC1AB"/>
+                                    <stop offset="1" stop-color="#14BEA9"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="sidebar-center">
+                    <nav class="navbar navbar-expand-sm sidebar-navbar">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebar-menu"
+                                aria-controls="sidebar-menu" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="sidebar-menu">
+                            <ul class="navbar-nav sidebar-menu__list">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Dashboard</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link dropdown-toggle" id="#collapseOne" data-toggle="dropdown"
+                                       href="#" role="button" aria-haspopup="true" aria-expanded="false">Personals</a>
+                                    <div aria-labelledby="collapseOne" class="dropdown-menu">
+                                        <ul class="collapse-menu">
+                                            <li class="collapse-menu__item">
+                                                <a href="#" class="collapse-menu__links">
+                                                    <span class="text">Verify documents</span>
+                                                    <span class="quantity">19</span>
+                                                </a>
+                                            </li>
+                                            <li class="collapse-menu__item active">
+                                                <a href="#" class="collapse-menu__links">
+                                                    <span class="text">Verify transactions</span>
+                                                    <span class="quantity">7</span>
+                                                </a>
+                                            </li>
+                                            <li class="collapse-menu__item">
+                                                <a href="#" class="collapse-menu__links">
+                                                    <span class="text">Users list</span>
+                                                </a>
+                                            </li>
+                                            <li class="collapse-menu__item">
+                                                <a href="#" class="collapse-menu__links">
+                                                    <span class="text">Transactions list</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link dropdown-toggle" id="#collapseTwo" data-toggle="dropdown"
+                                       href="#" role="button" aria-haspopup="true" aria-expanded="false">Business</a>
+                                    <div aria-labelledby="collapseTwo" class="dropdown-menu">
+                                        <ul class="collapse-menu">
+                                            <li class="collapse-menu__item">
+                                                <a href="#" class="collapse-menu__links">
+                                                    <span class="text">Verify documents</span>
+                                                    <span class="quantity">19</span>
+                                                </a>
+                                            </li>
+                                            <li class="collapse-menu__item active">
+                                                <a href="#" class="collapse-menu__links">
+                                                    <span class="text">Verify transactions</span>
+                                                    <span class="quantity">7</span>
+                                                </a>
+                                            </li>
+                                            <li class="collapse-menu__item">
+                                                <a href="#" class="collapse-menu__links">
+                                                    <span class="text">Users list</span>
+                                                </a>
+                                            </li>
+                                            <li class="collapse-menu__item">
+                                                <a href="#" class="collapse-menu__links">
+                                                    <span class="text">Transactions list</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link dropdown-toggle" id="#collapseThree" data-toggle="dropdown"
+                                       href="#" role="button" aria-haspopup="true" aria-expanded="false">User
+                                                                                                         management</a>
+                                    <div aria-labelledby="collapseThree" class="dropdown-menu">
+                                        <ul class="collapse-menu">
+                                            <li class="collapse-menu__item active">
+                                                <a href="#" class="collapse-menu__links">
+                                                    <span class="text">Groups</span>
+                                                </a>
+                                            </li>
+                                            <li class="collapse-menu__item">
+                                                <a href="#" class="collapse-menu__links">
+                                                    <span class="text">Roles</span>
+                                                </a>
+                                            </li>
+                                            <li class="collapse-menu__item">
+                                                <a href="#" class="collapse-menu__links">
+                                                    <span class="text">Permissions</span>
+                                                </a>
+                                            </li>
+                                            <li class="collapse-menu__item">
+                                                <a href="#" class="collapse-menu__links">
+                                                    <span class="text">Blacklist</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Logs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Affiliate partners</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Settings</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="content-wrapper">
+                <div class="content-wrapper__top">
+                    <div class="admin-v">
+                        <p class="medium">Admin </p>
+                        <span>v. 1.0.3</span>
+                    </div>
+
+                    <div class="box-right">
+                        <div class="previews-user">
+                            <div class="photo"><img src="img/user-preview.png" alt=""></div>
+                            <p class="name">Cyril Yakovlev</p>
+                        </div>
+
+                        <a href="#" class="links-edit color-accent medium">Log Out</a>
+                    </div>
+                </div>
+
+                <div class="content-wrapper__center">
+                    <h1>Verify transactions</h1>
+
+                    <div class="table table-personal table-personal-transactions w-100">
+                        <div class="table-head">
+                            <div class="id">ID</div>
+                            <div class="from-it">From</div>
+                            <div class="to-it">To</div>
+                            <div class="sub-date">Submission date</div>
+                            <div class="amount-it">Amount</div>
+                            <div class="free-it">Fee</div>
+                        </div>
+
+                        <div class="table-body">
+                            <div class="line">
+                                <div class="icon-initials">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 5L19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="id">
+                                    <h4>#23423</h4>
+                                </div>
+                                <div class="from-it">
+                                    <p>Dropbox LLC</p>
+                                </div>
+                                <div class="to-it">
+                                    <p>Google LLC</p>
+                                </div>
+                                <div class="sub-date">
+                                    <p>Oct 23, 2019</p>
+                                    <p>18:00</p>
+                                </div>
+                                <div class="amount-it">
+                                    <p>$100.00</p>
+                                </div>
+                                <div class="free-it">
+                                    <p>$5.00</p>
+                                </div>
+                                <a href="#" class="links medium color-accent" data-toggle="modal" data-target="#transactionModal">View</a>
+                            </div>
+                            <div class="line">
+                                <div class="icon-initials">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 5L19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="id">
+                                    <h4>#23423</h4>
+                                </div>
+                                <div class="from-it">
+                                    <p>Dropbox LLC</p>
+                                </div>
+                                <div class="to-it">
+                                    <p>Google LLC</p>
+                                </div>
+                                <div class="sub-date">
+                                    <p>Oct 23, 2019</p>
+                                    <p>18:00</p>
+                                </div>
+                                <div class="amount-it">
+                                    <p>$100.00</p>
+                                </div>
+                                <div class="free-it">
+                                    <p>$5.00</p>
+                                </div>
+                                <a href="#" class="links medium color-accent" data-toggle="modal" data-target="#transactionModal">View</a>
+                            </div>
+                            <div class="line">
+                                <div class="icon-initials">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 5L19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="id">
+                                    <h4>#23423</h4>
+                                </div>
+                                <div class="from-it">
+                                    <p>Dropbox LLC</p>
+                                </div>
+                                <div class="to-it">
+                                    <p>Google LLC</p>
+                                </div>
+                                <div class="sub-date">
+                                    <p>Oct 23, 2019</p>
+                                    <p>18:00</p>
+                                </div>
+                                <div class="amount-it">
+                                    <p>$100.00</p>
+                                </div>
+                                <div class="free-it">
+                                    <p>$5.00</p>
+                                </div>
+                                <a href="#" class="links medium color-accent" data-toggle="modal" data-target="#transactionModal">View</a>
+                            </div>
+                            <div class="line">
+                                <div class="icon-initials">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 5L19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="id">
+                                    <h4>#23423</h4>
+                                </div>
+                                <div class="from-it">
+                                    <p>Dropbox LLC</p>
+                                </div>
+                                <div class="to-it">
+                                    <p>Google LLC</p>
+                                </div>
+                                <div class="sub-date">
+                                    <p>Oct 23, 2019</p>
+                                    <p>18:00</p>
+                                </div>
+                                <div class="amount-it">
+                                    <p>$100.00</p>
+                                </div>
+                                <div class="free-it">
+                                    <p>$5.00</p>
+                                </div>
+                                <a href="#" class="links medium color-accent" data-toggle="modal" data-target="#transactionModal">View</a>
+                            </div>
+                            <div class="line">
+                                <div class="icon-initials">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 5L19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="id">
+                                    <h4>#23423</h4>
+                                </div>
+                                <div class="from-it">
+                                    <p>Dropbox LLC</p>
+                                </div>
+                                <div class="to-it">
+                                    <p>Google LLC</p>
+                                </div>
+                                <div class="sub-date">
+                                    <p>Oct 23, 2019</p>
+                                    <p>18:00</p>
+                                </div>
+                                <div class="amount-it">
+                                    <p>$100.00</p>
+                                </div>
+                                <div class="free-it">
+                                    <p>$5.00</p>
+                                </div>
+                                <a href="#" class="links medium color-accent" data-toggle="modal" data-target="#transactionModal">View</a>
+                            </div>
+                            <div class="line">
+                                <div class="icon-initials">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 5L19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="id">
+                                    <h4>#23423</h4>
+                                </div>
+                                <div class="from-it">
+                                    <p>Dropbox LLC</p>
+                                </div>
+                                <div class="to-it">
+                                    <p>Google LLC</p>
+                                </div>
+                                <div class="sub-date">
+                                    <p>Oct 23, 2019</p>
+                                    <p>18:00</p>
+                                </div>
+                                <div class="amount-it">
+                                    <p>$100.00</p>
+                                </div>
+                                <div class="free-it">
+                                    <p>$5.00</p>
+                                </div>
+                                <a href="#" class="links medium color-accent" data-toggle="modal" data-target="#transactionModal">View</a>
+                            </div>
+                            <div class="line">
+                                <div class="icon-initials">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 5L19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="id">
+                                    <h4>#23423</h4>
+                                </div>
+                                <div class="from-it">
+                                    <p>Dropbox LLC</p>
+                                </div>
+                                <div class="to-it">
+                                    <p>Google LLC</p>
+                                </div>
+                                <div class="sub-date">
+                                    <p>Oct 23, 2019</p>
+                                    <p>18:00</p>
+                                </div>
+                                <div class="amount-it">
+                                    <p>$100.00</p>
+                                </div>
+                                <div class="free-it">
+                                    <p>$5.00</p>
+                                </div>
+                                <a href="#" class="links medium color-accent" data-toggle="modal" data-target="#transactionModal">View</a>
+                            </div>
+                            <div class="line">
+                                <div class="icon-initials">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12 5L19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="id">
+                                    <h4>#23423</h4>
+                                </div>
+                                <div class="from-it">
+                                    <p>Dropbox LLC</p>
+                                </div>
+                                <div class="to-it">
+                                    <p>Google LLC</p>
+                                </div>
+                                <div class="sub-date">
+                                    <p>Oct 23, 2019</p>
+                                    <p>18:00</p>
+                                </div>
+                                <div class="amount-it">
+                                    <p>$100.00</p>
+                                </div>
+                                <div class="free-it">
+                                    <p>$5.00</p>
+                                </div>
+                                <a href="#" class="links medium color-accent" data-toggle="modal" data-target="#transactionModal">View</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-transactions" id="transactionModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="icon-initials">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 5L19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+
+                <h5 class="modal-title medium">Transaction <span>#23423</span></h5>
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18" stroke="#7A8595" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                        <path d="M6 6L18 18" stroke="#7A8595" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <ul class="list-info">
+                    <li>
+                        <p>Sender name</p>
+                        <span>Dropbox LLC</span>
+                    </li>
+                    <li>
+                        <p>Account number</p>
+                        <span>LV86RTMB0000700806172</span>
+                    </li>
+                </ul>
+
+                <ul class="list-info">
+                    <li>
+                        <p>Receiver name</p>
+                        <span>Google LLC</span>
+                    </li>
+                    <li>
+                        <p>Account number</p>
+                        <span>LV86RTMB0000700806172</span>
+                    </li>
+                </ul>
+
+                <ul class="list-info">
+                    <li>
+                        <p>IBAN issuer</p>
+                        <span>NexPay UAB</span>
+                    </li>
+                    <li>
+                        <p>Submission date</p>
+                        <span>18:00, October 23, 2019</span>
+                    </li>
+                    <li>
+                        <p>Comment</p>
+                        <span>Lorem ipsum dolor sit amet</span>
+                    </li>
+                </ul>
+
+                <ul class="list-info">
+                    <li>
+                        <p>Amount</p>
+                        <span>$100.00</span>
+                    </li>
+                    <li>
+                        <p>Fee</p>
+                        <span>$5.00</span>
+                    </li>
+                    <li>
+                        <p>Agent fee</p>
+                        <span>$3.00</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-border__green btn-border medium color-accent w-100">Confirm</button>
+                <button type="button" class="btn btn-border__red btn-border medium color-red w-100" data-dismiss="modal" data-toggle="modal" data-target="#reject">Reject</button>
+                <button type="button" class="btn btn-border__blue btn-border medium color-blue w-100">Get .PDF statement</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-main" id="reject" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18" stroke="#7A8595" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                        <path d="M6 6L18 18" stroke="#7A8595" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <h6>Reason for rejection:</h6>
+
+                <div class="form-group">
+                    <textarea class="form-control" placeholder="Lorem ipsum dolor sit amet"></textarea>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-border__red btn-border medium color-red w-100">Reject</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
