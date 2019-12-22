@@ -41,6 +41,9 @@
                 <li><a href="user-management__roles.html">User management Roles</a></li>
                 <li><a href="user-management__permission.html">User management Permissions</a></li>
                 <li><a href="user-management__blacklist.html">User management Blacklist</a></li>
+                <li><a href="logs.html">Logs</a></li>
+                <li><a href="affiliate-partners.html">Affiliate partners</a></li>
+                <li><a href="settings.html">Settings</a></li>
             </ul>
             <br>
         </div>
@@ -155,6 +158,18 @@
         <div class="col-3">
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalPermission">
                add Permission
+            </button>
+        </div>
+
+        <div class="col-3">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalInvited">
+                Invited users
+            </button>
+        </div>
+
+        <div class="col-3">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addLine">
+                add line
             </button>
         </div>
     </div>
@@ -516,6 +531,7 @@
                 <button type="button" class="btn btn-border__green btn-border medium color-accent w-100">Confirm
                 </button>
             </div>
+
         </div>
     </div>
 </div>
@@ -1084,6 +1100,199 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-border__green btn-border medium color-accent w-100">Add permission</button>
             </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-main" id="modalInvited" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title medium">Invited users</h5>
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18" stroke="#7A8595" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"></path>
+                        <path d="M6 6L18 18" stroke="#7A8595" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <div class="invited-user">
+                    <div class="invited-user__name">
+                        <div class="icon-initials">
+                            <span>JW</span>
+                        </div>
+                        <h5>Joe Williams</h5>
+                    </div>
+
+                    <div class="earned-box">
+                        <h6>Earned:</h6>
+                        <p>$127.54</p>
+                    </div>
+                </div>
+
+                <div class="invited-user">
+                    <div class="invited-user__name">
+                        <div class="icon-initials">
+                            <span>JW</span>
+                        </div>
+                        <h5>Joe Williams</h5>
+                    </div>
+
+                    <div class="earned-box">
+                        <h6>Earned:</h6>
+                        <p>$127.54</p>
+                    </div>
+                </div>
+
+                <div class="invited-user">
+                    <div class="invited-user__name">
+                        <div class="icon-initials">
+                            <span>JW</span>
+                        </div>
+                        <h5>Joe Williams</h5>
+                    </div>
+
+                    <div class="earned-box">
+                        <h6>Earned:</h6>
+                        <p>$127.54</p>
+                    </div>
+                </div>
+
+                <div class="invited-user">
+                    <div class="invited-user__name">
+                        <div class="icon-initials">
+                            <span>JW</span>
+                        </div>
+                        <h5>Joe Williams</h5>
+                    </div>
+
+                    <div class="earned-box">
+                        <h6>Earned:</h6>
+                        <p>$127.54</p>
+                    </div>
+                </div>
+
+                <div class="invited-user">
+                    <div class="invited-user__name">
+                        <div class="icon-initials">
+                            <span>JW</span>
+                        </div>
+                        <h5>Joe Williams</h5>
+                    </div>
+
+                    <div class="earned-box">
+                        <h6>Earned:</h6>
+                        <p>$127.54</p>
+                    </div>
+                </div>
+
+                <div class="invited-user">
+                    <div class="invited-user__name">
+                        <div class="icon-initials">
+                            <span>JW</span>
+                        </div>
+                        <h5>Joe Williams</h5>
+                    </div>
+
+                    <div class="earned-box">
+                        <h6>Earned:</h6>
+                        <p>$127.54</p>
+                    </div>
+                </div>
+                <div class="invited-user">
+                    <div class="invited-user__name">
+                        <div class="icon-initials">
+                            <span>JW</span>
+                        </div>
+                        <h5>Joe Williams</h5>
+                    </div>
+
+                    <div class="earned-box">
+                        <h6>Earned:</h6>
+                        <p>$127.54</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-main" id="addLine" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title medium">Add new line</h5>
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18" stroke="#7A8595" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"></path>
+                        <path d="M6 6L18 18" stroke="#7A8595" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <h6>Title:</h6>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Item">
+                </div>
+
+                <a href="#" class="links links-add medium color-accent">
+                                        <span class="icon">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 4V20" stroke="#9DA7BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4 12H20" stroke="#9DA7BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                                        </span>
+                    <span class="text">Add item</span>
+                </a>
+
+                <h6>Value:</h6>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="100">
+                </div>
+                <h6>Value:</h6>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="100">
+                </div>
+                <h6>Value:</h6>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="100">
+                </div>
+                <h6>Value:</h6>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="100">
+                </div>
+
+                <a href="#" class="links links-add medium color-accent">
+                                        <span class="icon">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 4V20" stroke="#9DA7BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4 12H20" stroke="#9DA7BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                                        </span>
+                    <span class="text">Add value</span>
+                </a>
+            </div>
+            <div class="modal-footer">
+                <button type="button"
+                        class="btn btn-border__green btn-border medium color-accent w-100">Next
+                </button>
+            </div>
+
         </div>
     </div>
 </div>
