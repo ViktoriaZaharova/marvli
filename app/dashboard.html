@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <meta property="og:image" content="path/to/image.jpg">
-    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
 
     <!-- Chrome, Firefox OS and Opera -->
     <meta name="theme-color" content="#000">
@@ -86,12 +86,7 @@
                 </div>
 
                 <div class="sidebar-center">
-                    <nav class="navbar navbar-expand-sm sidebar-navbar">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebar-menu"
-                                aria-controls="sidebar-menu" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-
+                    <nav class="navbar navbar-expand sidebar-navbar">
                         <div class="collapse navbar-collapse" id="sidebar-menu">
                             <ul class="navbar-nav sidebar-menu__list">
                                 <li class="nav-item active">
@@ -203,12 +198,27 @@
 
             <div class="content-wrapper">
                 <div class="content-wrapper__top">
-                    <div class="admin-v">
+                    <div class="d-flex d-sm-none w-100 content-wrapper__top-mobile">
+                        <a href="index.html" class="logo-mobile">
+                            <img src="img/logo-mobile.svg" alt="">
+                        </a>
+
+                        <div class="title-page medium">Dashboard</div>
+
+
+                        <div class="btn-burger open-mobile__menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="admin-v d-none d-sm-flex">
                         <p class="medium">Admin </p>
                         <span>v. 1.0.3</span>
                     </div>
 
-                    <div class="box-right">
+                    <div class="box-right d-none d-sm-flex">
                         <div class="previews-user">
                             <div class="photo"><img src="img/user-preview.png" alt=""></div>
                             <p class="name">Cyril Yakovlev</p>
@@ -218,7 +228,7 @@
                     </div>
                 </div>
 
-                <div class="content-wrapper__center">
+                <div class="content-wrapper__center dashboard-section">
                     <h1>Dashboard</h1>
 
                     <div class="transaction-content w-100">
@@ -562,6 +572,8 @@
     </div>
 </div>
 
+<div class="overlay-menu"></div>
+
 
 <script src="js/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -570,6 +582,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script src="js/libs.min.js"></script>
 <script src="js/common.js"></script>
 
 </body>

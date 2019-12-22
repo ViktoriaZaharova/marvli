@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <meta property="og:image" content="path/to/image.jpg">
-    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
 
     <!-- Chrome, Firefox OS and Opera -->
     <meta name="theme-color" content="#000">
@@ -86,11 +86,7 @@
                 </div>
 
                 <div class="sidebar-center">
-                    <nav class="navbar navbar-expand-sm sidebar-navbar">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebar-menu"
-                                aria-controls="sidebar-menu" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                    <nav class="navbar navbar-expand sidebar-navbar">
 
                         <div class="collapse navbar-collapse" id="sidebar-menu">
                             <ul class="navbar-nav sidebar-menu__list">
@@ -117,12 +113,27 @@
 
             <div class="content-wrapper">
                 <div class="content-wrapper__top">
-                    <ul class="main-menu">
+                    <div class="d-flex d-sm-none w-100 content-wrapper__top-mobile">
+                        <a href="index.html" class="logo-mobile">
+                            <img src="img/logo-mobile.svg" alt="">
+                        </a>
+
+                        <div class="title-page medium">Accounts</div>
+
+
+                        <div class="btn-burger open-mobile__menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    
+                    <ul class="main-menu d-none d-sm-flex">
                         <li class="main-menu__item"><a href="#" class="main-menu__links">Personal</a></li>
                         <li class="main-menu__item active"><a href="#" class="main-menu__links">Business</a></li>
                     </ul>
 
-                    <div class="box-right">
+                    <div class="box-right d-none d-sm-flex">
                         <h6>Beldev Consulting OU</h6>
 
                         <div class="previews-user">
@@ -198,7 +209,7 @@
                              aria-labelledby="nav-home-tab">
 
                             <div class="tab-title__line">
-                                <h3 class="medium">All accounts</h3>
+                                <h3 class="medium d-none d-sm-flex">All accounts</h3>
 
                                 <form class="form-inline form-search">
                                     <input class="form-control" type="text" placeholder="Search by name or currency"
@@ -273,24 +284,191 @@
                                         <path d="M12 4V20" stroke="#9DA7BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                         <path d="M4 12H20" stroke="#9DA7BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
+
+                                    <span class="text d-flex d-sm-none color-accent medium">Add account</span>
                                 </a>
                             </div>
 
                         </div>
                         <div class="tab-pane fade" id="nav-transactions" role="tabpanel"
                              aria-labelledby="nav-profile-tab">
-                            2
+                            <div class="tab-title__line">
+                                <h3 class="medium d-none d-sm-flex">All accounts</h3>
+
+                                <form class="form-inline form-search">
+                                    <input class="form-control" type="text" placeholder="Search by name or currency"
+                                           aria-label="Search">
+                                    <button class="btn" type="submit">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                                                  stroke="#7A8595" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M20.9999 21L16.6499 16.65" stroke="#7A8595" stroke-width="2"
+                                                  stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </form>
+                            </div>
+
+                            <div class="accounts-content">
+                                <div class="accounts-box">
+                                    <div class="the-sum">$125,237.14</div>
+                                    <div class="line">
+                                        <div class="accounts-box__name">
+                                            <h3>Main Budget</h3>
+                                            <div class="currency">USD</div>
+                                        </div>
+                                        <div class="flag-country"><img src="img/states.png" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="accounts-box">
+                                    <div class="the-sum">₽2,563,602.98</div>
+                                    <div class="line">
+                                        <div class="accounts-box__name">
+                                            <h3>Startup Budget</h3>
+                                            <div class="currency">RUB</div>
+                                        </div>
+                                        <div class="flag-country"><img src="img/russia.png" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="accounts-box">
+                                    <div class="the-sum">$40,250.00</div>
+                                    <div class="line">
+                                        <div class="accounts-box__name">
+                                            <h3>Reserve</h3>
+                                            <div class="currency">USD</div>
+                                        </div>
+                                        <div class="flag-country"><img src="img/states.png" alt=""></div>
+
+                                    </div>
+                                </div>
+                                <div class="accounts-box">
+                                    <div class="the-sum">€23,658.43</div>
+                                    <div class="line">
+                                        <div class="accounts-box__name">
+                                            <h3>Other</h3>
+                                            <div class="currency">EUR</div>
+                                        </div>
+                                        <div class="flag-country"><img src="img/european.png" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="accounts-box">
+                                    <div class="the-sum">£7,120.56</div>
+                                    <div class="line">
+                                        <div class="accounts-box__name">
+                                            <h3>UK Account</h3>
+                                            <div class="currency">GBP</div>
+                                        </div>
+                                        <div class="flag-country"><img src="img/kingdom.png" alt=""></div>
+                                    </div>
+                                </div>
+                                <a href="#" class="accounts-box accounts-box__add">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 4V20" stroke="#9DA7BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4 12H20" stroke="#9DA7BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+
+                                    <span class="text d-flex d-sm-none color-accent medium">Add account</span>
+                                </a>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="nav-analytics" role="tabpanel" aria-labelledby="nav-contact-tab">
-                            3
+                            <div class="tab-title__line">
+                                <h3 class="medium d-none d-sm-flex">All accounts</h3>
+
+                                <form class="form-inline form-search">
+                                    <input class="form-control" type="text" placeholder="Search by name or currency"
+                                           aria-label="Search">
+                                    <button class="btn" type="submit">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                                                  stroke="#7A8595" stroke-width="2" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M20.9999 21L16.6499 16.65" stroke="#7A8595" stroke-width="2"
+                                                  stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </form>
+                            </div>
+
+                            <div class="accounts-content">
+                                <div class="accounts-box">
+                                    <div class="the-sum">$125,237.14</div>
+                                    <div class="line">
+                                        <div class="accounts-box__name">
+                                            <h3>Main Budget</h3>
+                                            <div class="currency">USD</div>
+                                        </div>
+                                        <div class="flag-country"><img src="img/states.png" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="accounts-box">
+                                    <div class="the-sum">₽2,563,602.98</div>
+                                    <div class="line">
+                                        <div class="accounts-box__name">
+                                            <h3>Startup Budget</h3>
+                                            <div class="currency">RUB</div>
+                                        </div>
+                                        <div class="flag-country"><img src="img/russia.png" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="accounts-box">
+                                    <div class="the-sum">$40,250.00</div>
+                                    <div class="line">
+                                        <div class="accounts-box__name">
+                                            <h3>Reserve</h3>
+                                            <div class="currency">USD</div>
+                                        </div>
+                                        <div class="flag-country"><img src="img/states.png" alt=""></div>
+
+                                    </div>
+                                </div>
+                                <div class="accounts-box">
+                                    <div class="the-sum">€23,658.43</div>
+                                    <div class="line">
+                                        <div class="accounts-box__name">
+                                            <h3>Other</h3>
+                                            <div class="currency">EUR</div>
+                                        </div>
+                                        <div class="flag-country"><img src="img/european.png" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="accounts-box">
+                                    <div class="the-sum">£7,120.56</div>
+                                    <div class="line">
+                                        <div class="accounts-box__name">
+                                            <h3>UK Account</h3>
+                                            <div class="currency">GBP</div>
+                                        </div>
+                                        <div class="flag-country"><img src="img/kingdom.png" alt=""></div>
+                                    </div>
+                                </div>
+                                <a href="#" class="accounts-box accounts-box__add">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 4V20" stroke="#9DA7BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4 12H20" stroke="#9DA7BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+
+                                    <span class="text d-flex d-sm-none color-accent medium">Add account</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+
             </div>
+
+
         </div>
     </div>
 </div>
 
+
+<div class="line-fixed__mobile d-flex d-sm-none"></div>
+<div class="overlay-menu"></div>
 
 <script src="js/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -299,6 +477,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script src="js/libs.min.js"></script>
 <script src="js/common.js"></script>
 
 </body>

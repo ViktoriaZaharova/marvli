@@ -44,7 +44,7 @@ gulp.task('libs-css', ['sass'], function(){
 });
 gulp.task('libs-js', function(){
   return gulp.src([
-    'app/libs/slick/slick.js'
+    'app/libs/owl/owl.carousel.min.js'
   ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())

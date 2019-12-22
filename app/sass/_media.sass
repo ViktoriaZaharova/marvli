@@ -1,55 +1,380 @@
 @import "vars"
 
 /*==========  Desktop First  ==========*/
+@media only screen and (max-width: 1460px)
+  .time-sales__info-box
+    margin: 0 40px 0 0
 
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	/**/
+@media only screen and (max-width: 1440px)
+  .accounts-box
+    width: 270px
+    height: 170px
+
+  .time-sales__info-box .name-wrapper
+    max-width: 225px
+
+  .time-sales__info-box
+    max-width: 390px
+    margin: 0 80px 0 0
 
 
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
+@media only screen and (max-width: 1300px)
+  .accounts-content
+    justify-content: space-between
+
+  .accounts-box
+    margin: 0 0 20px
+    width: 245px
+
+    &:nth-child(3), &:last-child
+      margin: 0 0 20px
+
+    h3, a
+      font-size: 16px
+      line-height: 19px
+
+  .the-sum
+    font-size: 22px
+
+  .tab-title__line h3
+    font-size: 18px
+
+  .time-sales__info-box .name-wrapper h4
+    font-size: 16px
+
+  .transaction-history
+    max-width: 320px
+    .name-wrapper
+      max-width: 147px
+
+  .time-sales__info-box .sum-wrapper, .time-sales__info-box .sum-wrapper .the-sum
+    font-size: 16px
+
+  .time-sales__info-box
+    max-width: 309px
 
 
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	/**/
+@media only screen and (max-width: 1199px)
+  .form-search
+    max-width: 550px
+
+  .form-search input, .form-search .form-control
+    height: 48px
+    font-size: 15px
+    padding: 0 20px 0 48px
+
+  .form-search button
+    left: 12px
+
+  .content-wrapper__center
+    padding: 30px 24px 12px
+
+  .content-wrapper__top
+    padding: 0 0 0 24px
+
+  .accounts-box
+    width: 230px
+
+  .time-sales__item
+    &:last-child
+      margin-right: 0
+
+@media only screen and (max-width: 991px)
+  .content-wrapper__top .box-right, .content-wrapper__top .main-menu
+    font-size: 13px
+
+  .main-menu__item
+    margin: 0 20px 0 0
+
+  .previews-user
+    margin: 0 10px
+
+  .content-wrapper__top .links-edit
+    padding: 18px 22px
+
+  .the-sum__max
+    font-size: 40px
+    line-height: 47px
+
+  .tab-content
+    padding: 24px 0 0 0
+
+  .accounts-content
+    justify-content: space-around
+
+  .form-search
+    max-width: 100%
+    margin: 20px 0 0
+
+  .filter-wrapper
+    width: 100%
+    margin: 24px 0 0
+    order: 1
+    justify-content: flex-start
+
+  .time-sales__item
+    margin: 0 30px 56px 0
+
+  .time-sales__info-box
+    max-width: none
+    margin: 0 0 64px
+    h3
+      font-size: 18px
+    .line
+      margin: 0 0 32px
+      &:last-child
+        margin: 0
+
+  .transaction-history .name-wrapper
+    max-width: calc(100% - 190px)
+
+@media only screen and (max-width: 767px)
+  .sidebar
+    max-width: 180px
+
+  .content-wrapper
+    width: calc(100% - 180px)
+
+  .content-wrapper__top .main-menu
+    flex-direction: column
+    align-items: flex-start
+
+  .main-menu__item
+    margin: 0
+
+  .content-wrapper__top .box-right, .content-wrapper__top .main-menu
+    font-size: 11px
+
+  .content-wrapper__top .links-edit
+    padding: 15px
+
+  .previews-user .photo
+    margin: 0 10px 0 0
+
+  .sidebar-navbar .sidebar-menu__list li .nav-link
+    font-size: 14px
+
+  .menu-control__item
+    margin: 0 24px 0 0
+
+  .accounts-box
+    width: 210px
+
+  .transaction-box
+    margin-right: 0
+
+  .transaction-content
+    justify-content: space-between
+    margin: 48px 0 24px
+
+  .charts-item
+    display: none
+    height: 184px
+    &:nth-child(-n+9)
+      display: flex
+
+  .charts-item1 .charts-item__bg, .charts-item6 .charts-item__bg
+    height: 96px
+
+  .charts-item2 .charts-item__bg, .charts-item7 .charts-item__bg
+    height: 138px
+
+  .charts-item3 .charts-item__bg, .charts-item8 .charts-item__bg
+    height: 69px
+
+  .charts-item4 .charts-item__bg
+    height: 125px
+
+  .charts-item5 .charts-item__bg
+    height: 167px
+
+  .charts-item9 .charts-item__bg
+    height: 112px
+
+@media only screen and (max-width: 670px)
+  .balance-line
+    flex-direction: column
+    align-items: center
+    h6
+      text-align: center
+      margin: 16px auto 32px
+      justify-content: center
+
+  .menu-control
+    order: 1
+
+  .accounts-box
+    width: 100%
+
+  .filter-item
+    padding: 13px
+    width: 109px
+    &:nth-child(2)
+      display: none
+
+@media only screen and (max-width: 575px)
+  .menu-control__item span
+    display: none
+
+  .menu-control__links
+    margin: 0
+
+  .content-wrapper__top
+    padding: 22px 24px
+
+  .sidebar
+    position: absolute
+    right: -100%
+    z-index: 3
+    top: 64px
+    max-width: 281px
+    transition: .3s ease
+    background: #FFFFFF
+    .sidebar-top
+      display: none
+    .sidebar-center
+
+      margin: 0 0 0 auto
+
+      height: 100vh
+      transition: .5s ease
+
+  .content-wrapper
+    width: 100%
 
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
+  .sidebar-menu__list li .nav-link
+    color: #000000
+    border-left-width: 3px
+
+  .sidebar-menu__list .active  .nav-link
+    font-weight: normal
+
+
+  .sidebar-navbar .sidebar-menu__list li.active .nav-link
+    font-size: 16px
+
+  .sidebar-menu__list li
+    margin: 0 0 8px
+
+  .sidebar-navbar .sidebar-menu__list li .nav-link
+    padding: 23px 24px 22px
+
+  .sidebar.open
+    right: 0
+
+  .nav-tabs .nav-link
+    font-size: 14px
+    line-height: 17px
+    margin: 0 42px -1px 0
+
+  .form-search
+    margin: 0
+
+  .container-fluid
+    overflow-y: hidden
+    overflow-x: hidden
+
+  html, body
+    height: auto
+
+  body
+    min-height: 100%
+
+  html
+    height: 100%
+
+  .accounts-box
+    height: auto
+    box-shadow: none
+    background: transparent
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+    padding: 0
+    margin: 0 0 36px
+    &:last-child
+      margin: 0
+    .line
+      margin: 0
+      order: -1
+      width: auto
+    .accounts-box__name
+      line-height: 19px
+      order: 1
+      .currency
+        display: none
+    .the-sum
+      font-size: 16px
+      line-height: 22px
+
+  .flag-country
+    width: 24px
+    height: 24px
+    margin: 0 20px 0 0
+
+  .tab-title__line
+    margin: 0 0 32px
+
+  .accounts-box__add
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    svg
+      width: 24px
+      height: 24px
+      margin: 0 20px 0 0
+
+  .accounts-content
+    margin: 0 0 76px
+
+  .transaction-box
+    margin: 10px 24px 32px 0
+
+  .transaction-content
+    justify-content: space-between
+    margin: 0 0 48px
+
+  .content-wrapper__center
+    h1
+      display: none
+
+  .time-sales__chart
+    order: -1
+    margin: 0 0 48px
+
+  .dashboard-section
+    .tab-content
+      padding: 48px 0 0 0
+      >.active
+        display: flex
+        flex-wrap: wrap
+
+  .time-sales__item
+    margin: 0 0 32px
+    width: 100%
+
+  .time-sales__info-box .name-wrapper .date
+    font-size: 14px
+
+  .dashboard-section
+    margin: 0 0 29px
 
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
+@media only screen and (max-width: 355px)
+  .content-wrapper__center
+    padding: 30px 20px 12px
+
+  .nav-tabs .nav-link
+    margin: 0 25px -1px 0
+
+  .time-sales__info-box .name-wrapper
+    margin: 0 auto 0 10px
 
 
-/*==========  Mobile First  ==========*/
+  .time-sales__info-box .name-wrapper
+    max-width: calc(100% - 70px)
 
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
-
+  .transaction-history .name-wrapper
+    max-width: calc(100% - 170px)
