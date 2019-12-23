@@ -86,11 +86,7 @@
                 </div>
 
                 <div class="sidebar-center">
-                    <nav class="navbar navbar-expand-sm sidebar-navbar">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebar-menu"
-                                aria-controls="sidebar-menu" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                    <nav class="navbar navbar-expand sidebar-navbar">
 
                         <div class="collapse navbar-collapse" id="sidebar-menu">
                             <ul class="navbar-nav sidebar-menu__list">
@@ -203,12 +199,26 @@
 
             <div class="content-wrapper">
                 <div class="content-wrapper__top">
-                    <div class="admin-v">
+                    <div class="d-flex d-sm-none w-100 content-wrapper__top-mobile">
+                        <a href="#" class="btn btn-next">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 12H5" stroke="#7A8595" stroke-width="2" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                                <path d="M12 19L5 12L12 5" stroke="#7A8595" stroke-width="2"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+
+                        <div class="title-page medium m-auto">Hold history</div>
+
+                    </div>
+                    <div class="admin-v d-none d-sm-flex">
                         <p class="medium">Admin </p>
                         <span>v. 1.0.3</span>
                     </div>
 
-                    <div class="box-right">
+                    <div class="box-right d-none d-sm-flex">
                         <div class="previews-user">
                             <div class="photo"><img src="img/user-preview.png" alt=""></div>
                             <p class="name">Cyril Yakovlev</p>
@@ -220,7 +230,7 @@
 
                 <div class="content-wrapper__center">
 
-                    <div class="personal-users-list__account">
+                    <div class="personal-users-list__account personal-users-list__budget business-users-list__settings">
 
                         <div class="user-account__wrapper">
                             <div class="icon-initials">
@@ -353,7 +363,7 @@
                                 <h3 class="title-box medium">Hold history</h3>
 
                                 <div class="table table-personal table-personal-transactions table-main-budget w-100">
-                                    <div class="table-head">
+                                    <div class="table-head d-none d-lg-flex">
                                         <div class="to-it">To</div>
                                         <div class="sub-date">Date and time</div>
                                         <div class="amount-it">Amount</div>
@@ -371,15 +381,27 @@
                                                           stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                             </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>To</p>
+                                            </div>
                                             <div class="to-it">
                                                 <p>Google LLC</p>
+                                            </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>Date and time</p>
                                             </div>
                                             <div class="sub-date">
                                                 <p>Oct 23, 2019</p>
                                                 <p>18:00</p>
                                             </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>Amount</p>
+                                            </div>
                                             <div class="amount-it">
                                                 <p>$100.00</p>
+                                            </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>Free</p>
                                             </div>
                                             <div class="free-it">
                                                 <p>$5.00</p>
@@ -396,15 +418,27 @@
                                                           stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                             </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>To</p>
+                                            </div>
                                             <div class="to-it">
                                                 <p>Google LLC</p>
+                                            </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>Date and time</p>
                                             </div>
                                             <div class="sub-date">
                                                 <p>Oct 23, 2019</p>
                                                 <p>18:00</p>
                                             </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>Amount</p>
+                                            </div>
                                             <div class="amount-it">
                                                 <p>$100.00</p>
+                                            </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>Free</p>
                                             </div>
                                             <div class="free-it">
                                                 <p>$5.00</p>
@@ -421,15 +455,27 @@
                                                           stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                             </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>To</p>
+                                            </div>
                                             <div class="to-it">
                                                 <p>Google LLC</p>
+                                            </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>Date and time</p>
                                             </div>
                                             <div class="sub-date">
                                                 <p>Oct 23, 2019</p>
                                                 <p>18:00</p>
                                             </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>Amount</p>
+                                            </div>
                                             <div class="amount-it">
                                                 <p>$100.00</p>
+                                            </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>Free</p>
                                             </div>
                                             <div class="free-it">
                                                 <p>$5.00</p>
@@ -446,15 +492,27 @@
                                                           stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                             </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>To</p>
+                                            </div>
                                             <div class="to-it">
                                                 <p>Google LLC</p>
+                                            </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>Date and time</p>
                                             </div>
                                             <div class="sub-date">
                                                 <p>Oct 23, 2019</p>
                                                 <p>18:00</p>
                                             </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>Amount</p>
+                                            </div>
                                             <div class="amount-it">
                                                 <p>$100.00</p>
+                                            </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>Free</p>
                                             </div>
                                             <div class="free-it">
                                                 <p>$5.00</p>
@@ -471,15 +529,27 @@
                                                           stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                             </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>To</p>
+                                            </div>
                                             <div class="to-it">
                                                 <p>Google LLC</p>
+                                            </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>Date and time</p>
                                             </div>
                                             <div class="sub-date">
                                                 <p>Oct 23, 2019</p>
                                                 <p>18:00</p>
                                             </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>Amount</p>
+                                            </div>
                                             <div class="amount-it">
                                                 <p>$100.00</p>
+                                            </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>Free</p>
                                             </div>
                                             <div class="free-it">
                                                 <p>$5.00</p>
@@ -496,15 +566,27 @@
                                                           stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                             </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>To</p>
+                                            </div>
                                             <div class="to-it">
                                                 <p>Google LLC</p>
+                                            </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>Date and time</p>
                                             </div>
                                             <div class="sub-date">
                                                 <p>Oct 23, 2019</p>
                                                 <p>18:00</p>
                                             </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>Amount</p>
+                                            </div>
                                             <div class="amount-it">
                                                 <p>$100.00</p>
+                                            </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>Free</p>
                                             </div>
                                             <div class="free-it">
                                                 <p>$5.00</p>
@@ -521,15 +603,27 @@
                                                           stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                             </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>To</p>
+                                            </div>
                                             <div class="to-it">
                                                 <p>Google LLC</p>
+                                            </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>Date and time</p>
                                             </div>
                                             <div class="sub-date">
                                                 <p>Oct 23, 2019</p>
                                                 <p>18:00</p>
                                             </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>Amount</p>
+                                            </div>
                                             <div class="amount-it">
                                                 <p>$100.00</p>
+                                            </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>Free</p>
                                             </div>
                                             <div class="free-it">
                                                 <p>$5.00</p>
@@ -546,15 +640,27 @@
                                                           stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                             </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>To</p>
+                                            </div>
                                             <div class="to-it">
                                                 <p>Google LLC</p>
+                                            </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>Date and time</p>
                                             </div>
                                             <div class="sub-date">
                                                 <p>Oct 23, 2019</p>
                                                 <p>18:00</p>
                                             </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>Amount</p>
+                                            </div>
                                             <div class="amount-it">
                                                 <p>$100.00</p>
+                                            </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>Free</p>
                                             </div>
                                             <div class="free-it">
                                                 <p>$5.00</p>
@@ -571,15 +677,27 @@
                                                           stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                             </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>To</p>
+                                            </div>
                                             <div class="to-it">
                                                 <p>Google LLC</p>
+                                            </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>Date and time</p>
                                             </div>
                                             <div class="sub-date">
                                                 <p>Oct 23, 2019</p>
                                                 <p>18:00</p>
                                             </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>Amount</p>
+                                            </div>
                                             <div class="amount-it">
                                                 <p>$100.00</p>
+                                            </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>Free</p>
                                             </div>
                                             <div class="free-it">
                                                 <p>$5.00</p>
@@ -596,15 +714,27 @@
                                                           stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                             </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>To</p>
+                                            </div>
                                             <div class="to-it">
                                                 <p>Google LLC</p>
+                                            </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>Date and time</p>
                                             </div>
                                             <div class="sub-date">
                                                 <p>Oct 23, 2019</p>
                                                 <p>18:00</p>
                                             </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>Amount</p>
+                                            </div>
                                             <div class="amount-it">
                                                 <p>$100.00</p>
+                                            </div>
+                                            <div class="d-flex d-lg-none table-subtitle">
+                                                <p>Free</p>
                                             </div>
                                             <div class="free-it">
                                                 <p>$5.00</p>
@@ -740,6 +870,9 @@
         </div>
     </div>
 </div>
+
+<div class="line-fixed__mobile d-flex d-sm-none"></div>
+<div class="overlay-menu"></div>
 
 <script src="js/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"

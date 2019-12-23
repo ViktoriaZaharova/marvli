@@ -86,11 +86,8 @@
                 </div>
 
                 <div class="sidebar-center">
-                    <nav class="navbar navbar-expand-sm sidebar-navbar">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebar-menu"
-                                aria-controls="sidebar-menu" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                    <nav class="navbar navbar-expand sidebar-navbar">
+
 
                         <div class="collapse navbar-collapse" id="sidebar-menu">
                             <ul class="navbar-nav sidebar-menu__list">
@@ -203,12 +200,26 @@
 
             <div class="content-wrapper">
                 <div class="content-wrapper__top">
-                    <div class="admin-v">
+                    <div class="d-flex d-sm-none w-100 content-wrapper__top-mobile">
+                        <a href="index.html" class="logo-mobile">
+                            <img src="img/logo-mobile.svg" alt="">
+                        </a>
+
+                        <div class="title-page medium">User</div>
+
+
+                        <div class="btn-burger open-mobile__menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="admin-v d-none d-sm-flex">
                         <p class="medium">Admin </p>
                         <span>v. 1.0.3</span>
                     </div>
 
-                    <div class="box-right">
+                    <div class="box-right d-none d-sm-flex">
                         <div class="previews-user">
                             <div class="photo"><img src="img/user-preview.png" alt=""></div>
                             <p class="name">Cyril Yakovlev</p>
@@ -232,6 +243,11 @@
                             <div class="button-group">
                                 <a href="#" class="btn btn-border btn-border__green color-accent medium">Message</a>
                                 <a href="#" class="btn btn-border btn-border__red color-red medium">Ban</a>
+                            </div>
+
+                            <div class="links-info">
+                                <div class="icon"><img src="img/info.svg" alt=""></div>
+                                <div class="text">More information</div>
                             </div>
 
                             <div class="box-hidden">
@@ -752,6 +768,9 @@
     </div>
 </div>
 
+
+<div class="line-fixed__mobile d-flex d-sm-none"></div>
+<div class="overlay-menu"></div>
 
 <script src="js/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"

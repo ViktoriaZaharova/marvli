@@ -832,6 +832,7 @@ h1
 .rejections-history__box-name
   display: flex
   align-items: center
+  flex-wrap: wrap
   margin: 0 0 12px
 
   h3
@@ -1280,13 +1281,13 @@ h1
     width: 190px
 
   .mail-num
-    width: 312px
+    width: 300px
 
   .doc-type, .to-it
     width: 180px
 
   .reason
-    width: 332px
+    width: 280px
 
   .id
     width: 100px
@@ -1329,6 +1330,7 @@ h1
       display: flex
       align-items: center
       flex-wrap: wrap
+      position: relative
       a
         color: #000
       .tooltip-icon
@@ -1338,6 +1340,9 @@ h1
       color: #EB001B
       a
         color: #EB001B
+
+.tooltip-wrapper
+  position: relative
 
 .table-personal-transactions
   margin: 64px 0 0 0
@@ -1388,17 +1393,25 @@ h1
   font-size: 16px
   line-height: 19px
   color: #4C5461
-  padding: 20px 20px 20px 34px
+  padding: 20px
   width: 100%
   opacity: 1
   filter: none
   max-width: 261px
+  min-width: 261px
   font-weight: normal
+  position: absolute
+  left: 100%
+  top: 50%
+  transform: translate(0,-50%)
+  display: none
+
 
 .tooltip
   &.bs-tooltip-right .arrow:before, &.bs-tooltip-left .arrow:before, &.bs-tooltip-bottom .arrow:before, &.bs-tooltip-top .arrow:before
     border-right-color: #FFFFFF !important
     opacity: 1
+
 
 .users-list__info
   margin: 48px 0 24px
@@ -2129,6 +2142,14 @@ h1
       border-radius: 2px 0 0 0
     .sub-close
       border-radius: 0 2px 0 0
+      .btn-close
+        display: flex
+        align-items: center
+        color: #0D85F3
+        .text
+          margin: 0 0 0 8px
+          font-size: 16px
+          line-height: 16px
   .line, .table-head
     margin: 0
   .sub-title
@@ -2178,6 +2199,16 @@ h1
 .content-wrapper__top-mobile
   justify-content: space-between
   align-items: center
+  position: relative
+  .btn-next
+    position: absolute
+    left: 0
+    top: 50%
+    transform: translate(0,-50%)
+    border: none
+    width: 24px
+    height: 24px
+    margin: 0
 
 .logo-mobile
   max-width: 28px
@@ -2271,8 +2302,40 @@ h1
   button.owl-dot.active
     background: #13BFAA
 
+.table-subtitle
+  color: #4C5461
+  font-size: 14px
+  line-height: 17px
+  letter-spacing: 0.01em
+  width: 44%
+  margin: 0 0 16px
 
+.links-info
+  align-items: center
+  justify-content: flex-start
+  display: none
+  cursor: pointer
+  transition: .3s ease
+  color: #4C5461
+  letter-spacing: 0.01em
+  font-size: 16px
+  line-height: 16px
+  &:hover
+    color: #000
+  .icon
+    width: 24px
+    height: 24px
+    margin: 0 12px 0 0
 
+.settings-content__mobile
+  .btn-next
+    display: none
+  .table-subtitle
+    display: none
+
+.btn-close
+  .text
+    display: none
 
 @import "media"
 // Всегда в конце
