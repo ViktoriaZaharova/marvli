@@ -283,7 +283,7 @@
                                 <div class="free-it">
                                     <p>$5.00</p>
                                 </div>
-                                <a href="#" class="links medium color-accent">View</a>
+                                <a href="#" type="button" class="links medium color-accent" data-toggle="modal" data-target="#transactionModal">View</a>
                             </div>
                             <div class="line">
                                 <div class="icon-initials">
@@ -326,7 +326,7 @@
                                 <div class="free-it">
                                     <p>$5.00</p>
                                 </div>
-                                <a href="#" class="links medium color-accent">View</a>
+                                <a href="#" type="button" class="links medium color-accent" data-toggle="modal" data-target="#transactionModal">View</a>
                             </div>
                             <div class="line">
                                 <div class="icon-initials">
@@ -369,7 +369,7 @@
                                 <div class="free-it">
                                     <p>$5.00</p>
                                 </div>
-                                <a href="#" class="links medium color-accent">View</a>
+                                <a href="#" type="button" class="links medium color-accent" data-toggle="modal" data-target="#transactionModal">View</a>
                             </div>
                             <div class="line">
                                 <div class="icon-initials">
@@ -412,7 +412,7 @@
                                 <div class="free-it">
                                     <p>$5.00</p>
                                 </div>
-                                <a href="#" class="links medium color-accent">View</a>
+                                <a href="#" type="button" class="links medium color-accent" data-toggle="modal" data-target="#transactionModal">View</a>
                             </div>
                             <div class="line">
                                 <div class="icon-initials">
@@ -455,7 +455,7 @@
                                 <div class="free-it">
                                     <p>$5.00</p>
                                 </div>
-                                <a href="#" class="links medium color-accent">View</a>
+                                <a href="#" type="button" class="links medium color-accent" data-toggle="modal" data-target="#transactionModal">View</a>
                             </div>
                             <div class="line">
                                 <div class="icon-initials">
@@ -498,7 +498,7 @@
                                 <div class="free-it">
                                     <p>$5.00</p>
                                 </div>
-                                <a href="#" class="links medium color-accent">View</a>
+                                <a href="#" type="button" class="links medium color-accent" data-toggle="modal" data-target="#transactionModal">View</a>
                             </div>
                             <div class="line">
                                 <div class="icon-initials">
@@ -541,7 +541,7 @@
                                 <div class="free-it">
                                     <p>$5.00</p>
                                 </div>
-                                <a href="#" class="links medium color-accent">View</a>
+                                <a href="#" type="button" class="links medium color-accent" data-toggle="modal" data-target="#transactionModal">View</a>
                             </div>
                             <div class="line">
                                 <div class="icon-initials">
@@ -584,7 +584,7 @@
                                 <div class="free-it">
                                     <p>$5.00</p>
                                 </div>
-                                <a href="#" class="links medium color-accent">View</a>
+                                <a href="#" type="button" class="links medium color-accent" data-toggle="modal" data-target="#transactionModal">View</a>
                             </div>
                         </div>
                     </div>
@@ -597,6 +597,121 @@
 
 <div class="line-fixed__mobile d-flex d-sm-none"></div>
 <div class="overlay-menu"></div>
+
+<div class="modal fade modal-transactions" id="transactionModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="icon-initials">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 5L19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+
+                <h5 class="modal-title medium"><strong>Transaction</strong> <span>#23423</span></h5>
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18" stroke="#7A8595" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                        <path d="M6 6L18 18" stroke="#7A8595" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <ul class="list-info">
+                    <li>
+                        <p>Sender name</p>
+                        <span>Dropbox LLC</span>
+                    </li>
+                    <li>
+                        <p>Account number</p>
+                        <span>LV86RTMB0000700806172</span>
+                    </li>
+                </ul>
+
+                <ul class="list-info">
+                    <li>
+                        <p>Receiver name</p>
+                        <span>Google LLC</span>
+                    </li>
+                    <li>
+                        <p>Account number</p>
+                        <span>LV86RTMB0000700806172</span>
+                    </li>
+                </ul>
+
+                <ul class="list-info">
+                    <li>
+                        <p>IBAN issuer</p>
+                        <span>NexPay UAB</span>
+                    </li>
+                    <li>
+                        <p>Submission date</p>
+                        <span>18:00, October 23, 2019</span>
+                    </li>
+                    <li>
+                        <p>Comment</p>
+                        <span>Lorem ipsum dolor sit amet</span>
+                    </li>
+                </ul>
+
+                <ul class="list-info">
+                    <li>
+                        <p>Amount</p>
+                        <span>$100.00</span>
+                    </li>
+                    <li>
+                        <p>Fee</p>
+                        <span>$5.00</span>
+                    </li>
+                    <li>
+                        <p>Agent fee</p>
+                        <span>$3.00</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-border__green btn-border medium color-accent w-100" data-toggle="modal" data-target="#reject" data-dismiss="modal">Confirm</button>
+                <button type="button" class="btn btn-border__red btn-border medium color-red w-100">Reject</button>
+                <button type="button" class="btn btn-border__blue btn-border medium color-blue w-100">Get .PDF statement</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade modal-main" id="reject" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18" stroke="#7A8595" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                        <path d="M6 6L18 18" stroke="#7A8595" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <h6>Reason for rejection:</h6>
+
+                <div class="form-group">
+                    <textarea class="form-control" placeholder="Lorem ipsum dolor sit amet"></textarea>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-border__red btn-border medium color-red w-100">Reject</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <script src="js/jquery.min.js"></script>
