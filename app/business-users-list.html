@@ -344,7 +344,7 @@
                                         <p>+1 234 567 89 10</p>
                                     </div>
 
-                                    <a href="#" class="links medium color-accent">View</a>
+                                    <a href="#" class="links medium color-accent" type="button" data-toggle="modal" data-target="#modalDropbox">View</a>
                                 </div>
                                 <div class="line">
                                     <div class="icon-cloud">
@@ -373,7 +373,7 @@
                                         <p>+1 234 567 89 10</p>
                                     </div>
 
-                                    <a href="#" class="links medium color-accent">View</a>
+                                    <a href="#" class="links medium color-accent" type="button" data-toggle="modal" data-target="#modalDropbox">View</a>
                                 </div>
                                 <div class="line">
                                     <div class="icon-initials">
@@ -402,7 +402,7 @@
                                         <p>+1 234 567 89 10</p>
                                     </div>
 
-                                    <a href="#" class="links medium color-accent">View</a>
+                                    <a href="#" class="links medium color-accent" type="button" data-toggle="modal" data-target="#modalDropbox">View</a>
                                 </div>
                                 <div class="line">
                                     <div class="icon-cloud">
@@ -438,7 +438,7 @@
                                         <p>+1 234 567 89 10</p>
                                     </div>
 
-                                    <a href="#" class="links medium color-accent">View</a>
+                                    <a href="#" class="links medium color-accent" type="button" data-toggle="modal" data-target="#modalDropbox">View</a>
                                 </div>
                                 <div class="line">
                                     <div class="icon-initials">
@@ -467,7 +467,7 @@
                                         <p>+1 234 567 89 10</p>
                                     </div>
 
-                                    <a href="#" class="links medium color-accent">View</a>
+                                    <a href="#" class="links medium color-accent" type="button" data-toggle="modal" data-target="#modalDropbox">View</a>
                                 </div>
                                 <div class="line">
                                     <div class="icon-initials">
@@ -496,7 +496,7 @@
                                         <p>+1 234 567 89 10</p>
                                     </div>
 
-                                    <a href="#" class="links medium color-accent">View</a>
+                                    <a href="#" class="links medium color-accent" type="button" data-toggle="modal" data-target="#modalDropbox">View</a>
                                 </div>
                             </div>
                         </div>
@@ -510,6 +510,437 @@
     </div>
 </div>
 <div class="overlay-menu"></div>
+
+<div class="modal fade account-modal" id="modalDropbox" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="icon-cloud">
+                    <img src="img/dropbox.svg" alt="">
+                </div>
+
+                <h5 class="modal-title medium">Dropbox LLC</h5>
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18" stroke="#7A8595" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                        <path d="M6 6L18 18" stroke="#7A8595" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <ul class="list-info">
+                    <li>
+                        <p>Document type</p>
+                        <span>ID Card</span>
+                    </li>
+                    <li>
+                        <p>Submission date</p>
+                        <span>18:00, October 23, 2019</span>
+                    </li>
+                    <li>
+                        <p>Phone number</p>
+                        <span>+1 234 567 89 10</span>
+                    </li>
+                    <li>
+                        <p>E-mail</p>
+                        <span>joewilliams@gmail.com</span>
+                    </li>
+                    <li>
+                        <p>Address</p>
+                        <span>LACPLESA 88-1, RIGA, 1003, Latvia</span>
+                    </li>
+                    <li>
+                        <p>Document validity</p>
+                        <span>September 17, 2027</span>
+                    </li>
+                </ul>
+
+                <a href="#" class="links color-blue">ID card</a>
+                <a href="#" class="links color-blue">Address verification</a>
+                <a href="#" class="links color-blue">Selfie</a>
+                <a href="#" class="links color-blue">Verification Report</a>
+
+                <div class="dropdown-wrapper">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownIP" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                        Users with the same IP address (0)
+                    </button>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownIP">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-border__green btn-border medium color-accent w-100" data-toggle="modal" data-target="#stepOne" data-dismiss="modal">Confirm
+                </button>
+                <button type="button" class="btn btn-border__red btn-border medium color-red w-100">Reject</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-main" id="stepOne" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <h5 class="modal-title medium">Step 1 of 4</h5>
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18" stroke="#7A8595" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                        <path d="M6 6L18 18" stroke="#7A8595" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+
+                <div class="dropdown-wrapper">
+                    <h6>IBAN issuer:</h6>
+                    <button class="btn dropdown-toggle" type="button" id="dropdownChoose" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                        (Choose issuer)
+                    </button>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownChoose">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" data-toggle="modal" data-target="#stepTwo" data-dismiss="modal"
+                        class="btn btn-border__green btn-border medium color-accent w-100">Next
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-main" id="stepTwo" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <h5 class="modal-title medium">Step 2 of 4</h5>
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18" stroke="#7A8595" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                        <path d="M6 6L18 18" stroke="#7A8595" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <h6>Incoming SEPA:</h6>
+
+                <div class="button-group">
+                    <label class="checkbox">
+                        <input class="checkbox-inp" type="radio" name="radio">
+                        <span class="checkbox-custom"></span>
+                        <span class="label">Fixed</span>
+                    </label>
+
+                    <label class="checkbox">
+                        <input class="checkbox-inp" type="radio" name="radio">
+                        <span class="checkbox-custom"></span>
+                        <span class="label">Percent</span>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="$25">
+                </div>
+
+                <h6>Outcoming SEPA:</h6>
+
+                <div class="button-group">
+                    <label class="checkbox">
+                        <input class="checkbox-inp" type="radio" name="radio">
+                        <span class="checkbox-custom"></span>
+                        <span class="label">Fixed</span>
+                    </label>
+
+                    <label class="checkbox">
+                        <input class="checkbox-inp" type="radio" name="radio">
+                        <span class="checkbox-custom"></span>
+                        <span class="label">Percent</span>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="$25">
+                </div>
+
+                <h6>Incoming SWIFT:</h6>
+
+                <div class="button-group">
+                    <label class="checkbox">
+                        <input class="checkbox-inp" type="radio" name="radio">
+                        <span class="checkbox-custom"></span>
+                        <span class="label">Fixed</span>
+                    </label>
+
+                    <label class="checkbox">
+                        <input class="checkbox-inp" type="radio" name="radio">
+                        <span class="checkbox-custom"></span>
+                        <span class="label">Percent</span>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="$25">
+                </div>
+
+                <h6>Outcoming SWIFT:</h6>
+
+                <div class="button-group">
+                    <label class="checkbox">
+                        <input class="checkbox-inp" type="radio" name="radio">
+                        <span class="checkbox-custom"></span>
+                        <span class="label">Fixed</span>
+                    </label>
+
+                    <label class="checkbox">
+                        <input class="checkbox-inp" type="radio" name="radio">
+                        <span class="checkbox-custom"></span>
+                        <span class="label">Percent</span>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="$25">
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" data-toggle="modal" data-target="#stepThree" data-dismiss="modal"
+                        class="btn btn-border__green btn-border medium color-accent w-100">Next
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-main" id="stepThree" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <h5 class="modal-title medium">Step 3 of 4</h5>
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18" stroke="#7A8595" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                        <path d="M6 6L18 18" stroke="#7A8595" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <h6>Account opening amount:</h6>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="$25">
+                </div>
+
+                <h6>Monthly service:</h6>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="$25">
+                </div>
+
+                <h6>Interest on depositing money on a card:</h6>
+
+
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="$25">
+                </div>
+
+                <h6>Interest on depositing money on a card:</h6>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="$25">
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" data-toggle="modal" data-target="#stepFour" data-dismiss="modal"
+                        class="btn btn-border__green btn-border medium color-accent w-100">Next
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-main" id="stepFour" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <h5 class="modal-title medium">Step 4 of 4</h5>
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18" stroke="#7A8595" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                        <path d="M6 6L18 18" stroke="#7A8595" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <h6>Сard payment fees at POS terminal:</h6>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="$25">
+                </div>
+
+                <h6>Сard payment fees at POS terminal (Europe):</h6>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="$25">
+                </div>
+
+                <h6>Сard payment fees at POS terminal (World):</h6>
+
+
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="$25">
+                </div>
+
+                <h6>ATM cash withdrawal fees (Europe):</h6>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="$25">
+                </div>
+
+                <h6>ATM cash withdrawal fees (World):</h6>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="$25">
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-border__green btn-border medium color-accent w-100" data-toggle="modal" data-target="#stepFive" data-dismiss="modal">Confirm
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-main" id="stepFive" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18" stroke="#7A8595" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                        <path d="M6 6L18 18" stroke="#7A8595" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <h6>Reason for rejection:</h6>
+
+                <div class="form-group">
+                    <textarea class="form-control" placeholder="Identity card is fake"></textarea>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-border__red btn-border medium color-red w-100">Reject</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-main" id="rejectionsHistory" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title medium">Rejections history</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18" stroke="#7A8595" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                        <path d="M6 6L18 18" stroke="#7A8595" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <div class="rejections-history">
+                    <div class="rejections-history__box">
+                        <div class="rejections-history__box-name">
+                            <h3>Identity card is fake</h3>
+                            <a href="#" class="links color-blue">ID card</a>
+                        </div>
+                        <div class="rejections-history__box-date">
+                            <div class="icon"><img src="img/calendar.svg" alt=""></div>
+                            <div class="date">Oct 23, 2019</div>
+                            <div class="time">18:00</div>
+                        </div>
+                    </div>
+                    <div class="rejections-history__box">
+                        <div class="rejections-history__box-name">
+                            <h3>Lorem ipsum dolor sit amet</h3>
+                            <a href="#" class="links color-blue">Passport</a>
+                        </div>
+                        <div class="rejections-history__box-date">
+                            <div class="icon"><img src="img/calendar.svg" alt=""></div>
+                            <div class="date">Nov 1, 2019</div>
+                            <div class="time">16:24</div>
+                        </div>
+                    </div>
+                    <div class="rejections-history__box">
+                        <div class="rejections-history__box-name">
+                            <h3>Identity card is fake</h3>
+                            <a href="#" class="links color-blue">ID card</a>
+                        </div>
+                        <div class="rejections-history__box-date">
+                            <div class="icon"><img src="img/calendar.svg" alt=""></div>
+                            <div class="date">Nov 5, 2019</div>
+                            <div class="time">12:30</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
 
 <script src="js/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
